@@ -4,7 +4,8 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            var videoGames = new List<string>() { "Harry Potter", "Call of Duty", "Weird West", "Pillars of Eternity", "Binding of Isaac", "Vampire Survivors", "Stray", "Mario 64", "Contra" };
+            videoGames.OrderBy(x => x.Length).ToList().ForEach(x => Console.WriteLine(x));
         }
     }
 }
